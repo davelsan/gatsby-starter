@@ -25,7 +25,6 @@
 
 ### Quick Start
 
-
 ```sh
 git clone https://github.com/davelsan/gatsby-starter.git  # clone this repository
 cd gatsby-starter                                         # change to project directory
@@ -35,10 +34,9 @@ yarn develop                                              # start the developmen
 
 The main site should be running at `http://localhost:8000`.
 
-*A `GraphiQL` user interface will also be running at `http://localhost:8000/___graphql`. Learn more about using this tool in the [Gatsby tutorial](https://www.gatsbyjs.com/tutorial/part-five/#introducing-graphiql).*
+_A `GraphiQL` user interface will also be running at `http://localhost:8000/___graphql`. Learn more about using this tool in the [Gatsby tutorial](https://www.gatsbyjs.com/tutorial/part-five/#introducing-graphiql)._
 
 Open the `gatsby-starter` directory in any code editor and start coding. Any changes in the editor will update the browser in real time.
-
 
 ### Available Commands
 
@@ -82,7 +80,7 @@ A quick look at the top-level files and directories in this Gatsby project.
 
 3.  **`.gitignore`**: This file tells git which files it should not track / not maintain a version history for.
 
-4. **`.eslintrc.js`**: This is the configuration file for [ESLint](https://eslint.org).
+4.  **`.eslintrc.js`**: This is the configuration file for [ESLint](https://eslint.org).
 
 5.  **`.prettierrc`**: This is the configuration file for [Prettier](https://prettier.io/).
 
@@ -94,7 +92,7 @@ A quick look at the top-level files and directories in this Gatsby project.
 
 9.  **`gatsby-ssr.js`**: This file is where Gatsby expects to find any usage of the [Gatsby server-side rendering APIs](https://www.gatsbyjs.com/docs/ssr-apis/) (if any). These allow customization of default Gatsby settings affecting server-side rendering.
 
-10.  **`LICENSE`**: This Gatsby starter is licensed under the [0BSD license](https://choosealicense.com/licenses/0bsd/).
+10. **`LICENSE`**: This Gatsby starter is licensed under the [0BSD license](https://choosealicense.com/licenses/0bsd/).
 
 11. **`package.json`**: A manifest file for Node.js projects, which includes things like metadata (the project’s name, author, etc). This manifest is how package managers know which modules to install for the project.
 
@@ -103,7 +101,6 @@ A quick look at the top-level files and directories in this Gatsby project.
 13. **`tsconfig.json`**: This is the configuration file for [TypeScript](https://www.typescriptlang.org/docs/handbook/tsconfig-json.html).
 
 14. **`yarn.lock`** This is an automatically generated file based on the exact versions of the module dependencies that were installed for the project.
-
 
 ## 🎓 Learning Gatsby
 

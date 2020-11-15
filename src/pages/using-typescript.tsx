@@ -1,9 +1,9 @@
 // If you don't want to use TypeScript you can delete this file!
-import React from "react";
-import { PageProps, Link, graphql } from "gatsby";
+import React from 'react';
+import { PageProps, Link, graphql } from 'gatsby';
 
-import Layout from "../components/layout";
-import SEO from "../components/seo";
+import Layout from '../components/layout';
+import SEO from '../components/seo';
 
 const UsingTypescript: React.FC<PageProps<PageQuery>> = ({ data, path }) => (
   <Layout>
@@ -15,15 +15,15 @@ const UsingTypescript: React.FC<PageProps<PageQuery>> = ({ data, path }) => (
       (like gatsby-node.js) currently don&apos;t support TypeScript yet.
     </p>
     <p>
-      For type checking you can use <em>yarn tscheck</em> and{" "}
+      For type checking you can use <em>yarn tscheck</em> and{' '}
       <em>yarn tscheck:watch</em>.
     </p>
     <p>
-      You&apos;re currently on the page &quot;{path}&quot; which was built on{" "}
+      You&apos;re currently on the page &quot;{path}&quot; which was built on{' '}
       {data.site.buildTime}.
     </p>
     <p>
-      To learn more, head over to our{" "}
+      To learn more, head over to our{' '}
       <a href="https://www.gatsbyjs.com/docs/typescript/">
         documentation about TypeScript
       </a>
