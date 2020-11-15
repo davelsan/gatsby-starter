@@ -31,7 +31,6 @@ module.exports = {
   rules: {
     // Disable prop-types as we use TypeScript for type checking
     "react/prop-types": "off",
-    "@typescript-eslint/explicit-function-return-type": "off",
     // Enable prettier rules
     "prettier/prettier": "warn",
     // interface start with capital I
@@ -41,4 +40,12 @@ module.exports = {
     // allow @ts-ignore for testing purposes
     "@typescript-eslint/ban-ts-ignore": "off",
   },
+  overrides: [
+    {
+      files: ["*.js"],
+      rules: {
+        "@typescript-eslint/explicit-function-return-type": "off",
+      },
+    },
+  ],
 };
