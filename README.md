@@ -110,10 +110,3 @@ Looking for guidance? Full documentation for Gatsby lives [on its website](https
 - **For most developers, it is recommended to start with their [in-depth tutorial for creating a site with Gatsby](https://www.gatsbyjs.com/tutorial/).** It starts with zero assumptions about the level of ability and walks through every step of the process.
 
 - **To dive straight into code samples, head [to their documentation](https://www.gatsbyjs.com/docs/).** In particular, check out the _Guides_, _API Reference_, and _Advanced Tutorials_ sections in the sidebar.
-
-## 💫 Deploy
-
-  |   |   |
-- | - | - |
-__Netlify__ | [![Deploy to Netlify](https://www.netlify.com/img/deploy/button.svg)](https://app.netlify.com/start/deploy?repository=https://github.com/davelsan/gatsby-starter)
-__Vercel__  | [![Deploy with Vercel](https://vercel.com/button)](https://vercel.com/import/project?template=https://github.com/davelsan/gatsby-starter)
