@@ -1,7 +1,7 @@
 module.exports = {
   siteMetadata: {
     title: `Gatsby Starter`,
-    description: `A custom Gatsby project based on the default starter. Includes additional ESLint and TypeScript configuration options.`,
+    description: `A custom Gatsby project based on the default starter. Includes additional configuration for ESLint, Tailwind, and TypeScript support.`,
     author: `@davelsan`,
   },
   plugins: [
