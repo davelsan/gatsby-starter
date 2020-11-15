@@ -27,10 +27,10 @@
 
 
 ```sh
-git clone https://github.com/davelsan/gatsby-starter  # clone this repository
-cd gatsby-starter                                     # change to project directory
-yarn install                                          # install dependencies
-yarn develop                                          # start the development server
+git clone https://github.com/davelsan/gatsby-starter.git  # clone this repository
+cd gatsby-starter                                         # change to project directory
+yarn install                                              # install dependencies
+yarn develop                                              # start the development server
 ```
 
 The main site should be running at `http://localhost:8000`.
