@@ -18,7 +18,7 @@
 
 - [x] ESLint + Prettier configuration.
 - [x] TypeScript components and pages, with strict type checking support.
-- [ ] Tailwind CSS configuration and included examples.
+- [x] Tailwind CSS configuration and included examples.
 - [ ] Markdown configuration to dynamically create content pages.
 
 ## &lt;/&gt; Develop
@@ -69,7 +69,9 @@ A quick look at the top-level files and directories in this Gatsby project.
 ├─ gatsby-ssr.js
 ├─ LICENSE
 ├─ package.json
+├─ postcss.config.js
 ├─ README.md
+├─ tailwind.config.js
 ├─ tsconfig.json
 └─ yarn.lock
 ```
@@ -96,11 +98,15 @@ A quick look at the top-level files and directories in this Gatsby project.
 
 11. **`package.json`**: A manifest file for Node.js projects, which includes things like metadata (the project’s name, author, etc). This manifest is how package managers know which modules to install for the project.
 
-12. **`README.md`**: This text file, containing information about the project and other useful references.
+12. **`postcss.config.js`**: This file is where [PostCSS](https://postcss.org) plugins, such as [Tailwind CSS](https://tailwindcss.com/), are added to the project.
 
-13. **`tsconfig.json`**: This is the configuration file for [TypeScript](https://www.typescriptlang.org/docs/handbook/tsconfig-json.html).
+13. **`README.md`**: This text file, containing information about the project and other useful references.
 
-14. **`yarn.lock`** This is an automatically generated file based on the exact versions of the module dependencies that were installed for the project.
+14. **`tailwind.config.js`**: This is the configuration file for [Tailwind CSS](https://tailwindcss.com/).
+
+15. **`tsconfig.json`**: This is the configuration file for [TypeScript](https://www.typescriptlang.org/docs/handbook/tsconfig-json.html).
+
+16. **`yarn.lock`** This is an automatically generated file based on the exact versions of the module dependencies that were installed for the project.
 
 ## 🎓 Learning Gatsby
 

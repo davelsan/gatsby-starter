@@ -9,7 +9,7 @@ import React from 'react';
 import { StaticQuery, graphql } from 'gatsby';
 
 import Header from './header';
-import './layout.css';
+import Footer from './footer';
 
 interface SiteTitleQuery {
   site: {
@@ -35,24 +35,10 @@ class Layout extends React.Component {
         render={data => (
           <>
             <Header siteTitle={data.site.siteMetadata?.title || `Title`} />
-            <div
-              style={{
-                margin: `0 auto`,
-                maxWidth: 960,
-                padding: `0 1.0875rem 1.45rem`,
-              }}
-            >
-              <main>{this.props.children}</main>
-              <footer
-                style={{
-                  marginTop: `2rem`,
-                }}
-              >
-                © {new Date().getFullYear()}, Built with
-                {` `}
-                <a href="https://www.gatsbyjs.com">Gatsby</a>
-              </footer>
-            </div>
+            <main className="flex flex-col items-center px-10 mt-24 sm:mt-32">
+              <div className="max-w-screen-lg">{this.props.children}</div>
+            </main>
+            <Footer />
           </>
         )}
       />
