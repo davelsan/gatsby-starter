@@ -5,13 +5,7 @@ import { PageProps, Link, graphql } from "gatsby";
 import Layout from "../components/layout";
 import SEO from "../components/seo";
 
-type DataProps = {
-  site: {
-    buildTime: string;
-  };
-};
-
-const UsingTypescript: React.FC<PageProps<DataProps>> = ({ data, path }) => (
+const UsingTypescript: React.FC<PageProps<PageQuery>> = ({ data, path }) => (
   <Layout>
     <SEO title="Using TypeScript" />
     <h1>Gatsby supports TypeScript by default!</h1>
@@ -21,7 +15,7 @@ const UsingTypescript: React.FC<PageProps<DataProps>> = ({ data, path }) => (
       (like gatsby-node.js) currently don&apos;t support TypeScript yet.
     </p>
     <p>
-      For type checking you&apos; can use <em>yarn tscheck</em> and{" "}
+      For type checking you can use <em>yarn tscheck</em> and{" "}
       <em>yarn tscheck:watch</em>.
     </p>
     <p>
@@ -39,12 +33,18 @@ const UsingTypescript: React.FC<PageProps<DataProps>> = ({ data, path }) => (
   </Layout>
 );
 
-export default UsingTypescript;
+export interface PageQuery {
+  site: {
+    buildTime: string;
+  };
+}
 
-export const query = graphql`
-  {
+export const pageQuery = graphql`
+  query {
     site {
       buildTime(formatString: "YYYY-MM-DD hh:mm a z")
     }
   }
 `;
+
+export default UsingTypescript;

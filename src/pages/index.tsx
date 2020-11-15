@@ -5,18 +5,7 @@ import Layout from "../components/layout";
 import Image from "../components/image";
 import SEO from "../components/seo";
 
-interface IndexPageQuery {
-  data: {
-    site: {
-      siteMetadata: {
-        author: string;
-        description: string;
-      };
-    };
-  };
-}
-
-class IndexPage extends React.Component<IndexPageQuery> {
+class IndexPage extends React.Component<PageQuery> {
   render(): JSX.Element {
     return (
       <Layout>
@@ -35,8 +24,19 @@ class IndexPage extends React.Component<IndexPageQuery> {
   }
 }
 
+interface PageQuery {
+  data: {
+    site: {
+      siteMetadata: {
+        author: string;
+        description: string;
+      };
+    };
+  };
+}
+
 export const query = graphql`
-  query siteDescription {
+  query {
     site {
       siteMetadata {
         author

@@ -11,7 +11,7 @@ import { StaticQuery, graphql } from "gatsby";
 import Header from "./header";
 import "./layout.css";
 
-interface LayoutQuery {
+interface SiteTitleQuery {
   site: {
     siteMetadata?: {
       title: string;
@@ -22,9 +22,9 @@ interface LayoutQuery {
 class Layout extends React.Component {
   render(): JSX.Element {
     return (
-      <StaticQuery<LayoutQuery>
+      <StaticQuery<SiteTitleQuery>
         query={graphql`
-          query SiteTitleQuery {
+          query {
             site {
               siteMetadata {
                 title

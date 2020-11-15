@@ -9,7 +9,7 @@ import React from "react";
 import { Helmet } from "react-helmet";
 import { useStaticQuery, graphql } from "gatsby";
 
-interface SEOProps {
+interface ComponentProps {
   title: string;
   description?: string;
   lang?: string;
@@ -19,7 +19,7 @@ interface SEOProps {
   }>;
 }
 
-interface SEOQuery {
+interface SiteMetadataQuery {
   site: {
     siteMetadata?: {
       title: string;
@@ -29,8 +29,8 @@ interface SEOQuery {
   };
 }
 
-const SEO: React.FC<SEOProps> = ({ description, lang, meta, title }) => {
-  const { site } = useStaticQuery<SEOQuery>(
+const SEO: React.FC<ComponentProps> = ({ description, lang, meta, title }) => {
+  const { site } = useStaticQuery<SiteMetadataQuery>(
     graphql`
       query {
         site {
@@ -54,7 +54,6 @@ const SEO: React.FC<SEOProps> = ({ description, lang, meta, title }) => {
       }}
       title={title}
       titleTemplate={defaultTitle}
-      // titleTemplate={defaultTitle ? `%s | ${defaultTitle}` : null}
       meta={[
         {
           name: `description`,
