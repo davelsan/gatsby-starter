@@ -62,6 +62,7 @@ A quick look at the top-level files and directories in this Gatsby project.
 .
 ├─ node_modules
 ├─ src
+├─ .eslintrc.js
 ├─ .gitignore
 ├─ .prettierrc
 ├─ gatsby-browser.js
@@ -69,9 +70,10 @@ A quick look at the top-level files and directories in this Gatsby project.
 ├─ gatsby-node.js
 ├─ gatsby-ssr.js
 ├─ LICENSE
-├─ yarn.lock
 ├─ package.json
-└─ README.md
+├─ README.md
+├─ tsconfig.json
+└─ yarn.lock
 ```
 
 1.  **`/node_modules`**: This directory contains all of the modules of code that the project depends on (npm packages) are automatically installed.
