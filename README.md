@@ -16,10 +16,10 @@
 
 ## &#9733; Features
 
-- [x] ESLint + Prettier configuration.
-- [x] TypeScript components and strict type checking support.
-- [x] Tailwind CSS configuration and included examples.
-- [ ] Markdown configuration to dynamically create content pages.
+- [x] Full use of TypeScript, with strict type checking support.
+- [x] Tailwind CSS support in css and html, with included examples.
+- [x] Seamless ESLint + Prettier configuration.
+- [x] Dynamically create content pages from Markdown documents.
 
 ## &lt;/&gt; Develop
 

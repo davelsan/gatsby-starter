@@ -7,6 +7,7 @@ import SEO from '../components/seo';
 
 import '../css/tailwind.css';
 import '../css/layout.css';
+import '../css/markdown.css';
 
 class IndexPage extends React.Component<PageQuery> {
   render(): JSX.Element {

@@ -23,21 +23,19 @@ module.exports = {
     ecmaFeatures: {
       jsx: true,
     },
-    // Allows for the parsing of modern ECMAScript features
+    // Allow parsing modern ECMAScript features
     ecmaVersion: 2018,
-    // Allows for the use of imports
+    // Allow the use of imports
     sourceType: 'module',
   },
   rules: {
-    // Disable prop-types as we use TypeScript for type checking
+    // Disable prop-types (use TypeScript interfaces instead)
     'react/prop-types': 'off',
     // Enable prettier rules
     'prettier/prettier': 'warn',
-    // interface start with capital I
+    // Allow interfaces to start with capital I
     '@typescript-eslint/interface-name-prefix': 'off',
-    // allow "any" as type
-    '@typescript-eslint/no-explicit-any': 'off',
-    // allow @ts-ignore for testing purposes
+    // Allow @ts-ignore for testing purposes
     '@typescript-eslint/ban-ts-ignore': 'off',
   },
   overrides: [
@@ -45,6 +43,8 @@ module.exports = {
       files: ['*.js'],
       rules: {
         '@typescript-eslint/explicit-function-return-type': 'off',
+        '@typescript-eslint/no-var-requires': 'off',
+        '@typescript-eslint/no-explicit-any': 'off',
       },
     },
   ],
