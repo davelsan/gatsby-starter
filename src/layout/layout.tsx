@@ -33,13 +33,13 @@ class Layout extends React.Component {
           }
         `}
         render={data => (
-          <>
+          <div className="flex flex-col min-h-screen">
             <Header siteTitle={data.site.siteMetadata?.title || `Title`} />
-            <main className="flex flex-col items-center px-10 mt-24 sm:mt-32">
+            <main className="flex flex-grow flex-col h-full w-full items-center px-10 mt-8">
               <div className="max-w-screen-lg">{this.props.children}</div>
             </main>
             <Footer />
-          </>
+          </div>
         )}
       />
     );

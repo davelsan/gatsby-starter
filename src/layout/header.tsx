@@ -9,7 +9,7 @@ class Header extends React.Component<HeaderProps> {
   render(): JSX.Element {
     return (
       <header
-        className="fixed top-0 flex justify-center py-4 px-10 w-full"
+        className="flex justify-center py-4 px-10 w-full"
         style={{ background: `rebeccapurple` }}
       >
         <h1 className="text-3xl sm:text-4xl font-semibold">

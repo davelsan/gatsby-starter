@@ -4,7 +4,7 @@ class Footer extends React.Component {
   render(): JSX.Element {
     return (
       <footer
-        className="fixed flex bottom-0 w-full p-8 justify-center"
+        className="flex justify-center mt-10 p-8 w-full"
         style={{
           backgroundColor: 'rebeccapurple',
         }}
