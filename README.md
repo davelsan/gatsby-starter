@@ -16,10 +16,10 @@
 
 ## &#9733; Features
 
-- [x] Full use of TypeScript, with strict type checking support.
-- [x] Tailwind CSS support in css and html, with included examples.
+- [x] Re-written in TypeScript, including Gatsby API files, with strict type checking support.
+- [x] Re-styled using Tailwind CSS utility classes.
+- [x] Dynamically created content pages from Markdown documents.
 - [x] Seamless ESLint + Prettier configuration.
-- [x] Dynamically create content pages from Markdown documents.
 
 ## &lt;/&gt; Develop
 
