@@ -8,8 +8,8 @@ class ContentTemplate extends React.Component<PageProps & PageQuery> {
   render(): JSX.Element {
     return (
       <Layout>
-        <div className="markdown">
-          <div className="">
+        <div className="prose sm:prose-lg lg:prose-2xl">
+          <div>
             <h1>{this.props.data.markdownRemark.frontmatter.title}</h1>
             <h2>{this.props.data.markdownRemark.frontmatter.date}</h2>
             <div
