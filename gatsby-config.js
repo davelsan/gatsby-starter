@@ -1,4 +1,6 @@
-require('ts-node').register();
-require('tsconfig-paths/register');
-
-module.exports = require('./src/api/config').default;
+const { generateConfig } = require('gatsby-plugin-ts-config');
+module.exports = generateConfig({
+  configDir: './src/gatsby-api',
+  babel: false,
+  tsNode: true,
+});
