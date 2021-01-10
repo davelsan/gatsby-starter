@@ -18,7 +18,7 @@
 
 - [x] Re-written in TypeScript, including Gatsby API files, with strict type checking support.
 - [x] Re-styled using Tailwind CSS utility classes.
-- [x] Dynamically created content pages from Markdown documents.
+- [x] Included example of a dynamically created content page from a Markdown document.
 - [x] Seamless ESLint + Prettier configuration.
 
 ## &lt;/&gt; Develop
